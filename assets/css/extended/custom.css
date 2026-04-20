@@ -1,0 +1,26 @@
+cat > ~/elkcitycommons/assets/css/extended/custom.css << 'EOF'
+:root {
+    --theme: #fdfaf6;
+    --entry: #f4efe8;
+    --primary: #2c1f14;
+    --secondary: #7a6652;
+    --tertiary: #ddd4c4;
+    --border: #ddd4c4;
+}
+
+a {
+    color: #c0392b;
+}
+
+a:hover {
+    color: #e67e22;
+}
+
+body {
+    font-family: 'Georgia', serif;
+}
+
+h1, h2, h3, .post-title {
+    font-family: 'Georgia', serif;
+}
+EOF
