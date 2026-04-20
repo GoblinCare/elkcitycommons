@@ -2,3 +2,4 @@ baseURL = 'https://elkcitycommons.com'
 languageCode = 'en-us'
 title = 'Elk City Commons'
 theme = 'PaperMod'
+publishDir = "."
