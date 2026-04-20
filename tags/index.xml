@@ -7,5 +7,26 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://elkcitycommons.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Candy</title>
+      <link>https://elkcitycommons.com/tags/candy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://elkcitycommons.com/tags/candy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Local</title>
+      <link>https://elkcitycommons.com/tags/local/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://elkcitycommons.com/tags/local/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sweets</title>
+      <link>https://elkcitycommons.com/tags/sweets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://elkcitycommons.com/tags/sweets/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

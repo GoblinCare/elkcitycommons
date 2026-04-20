@@ -23,4 +23,17 @@ body {
 h1, h2, h3, .post-title {
     font-family: 'Georgia', serif;
 }
+
+body,
+.paginav,
+.post-entry,
+article,
+.main {
+  background-color: var(--theme) !important;
+}
+
+.header {
+  background-color: var(--bark, #1e1408) !important;
+}
+
 EOF

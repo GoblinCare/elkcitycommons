@@ -1,0 +1,247 @@
+{{ define "main" }}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<style>
+.biz-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  font-family: 'Barlow', sans-serif;
+}
+
+.biz-breadcrumb {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #a07850;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.biz-breadcrumb a { color: #a07850; text-decoration: none; }
+.biz-breadcrumb a:hover { color: #ede0c8; }
+.biz-breadcrumb span { color: #6b4226; }
+
+.biz-badge {
+  display: inline-block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+.biz-badge.local {
+  background-color: #5d7a52;
+  color: #1e1408;
+}
+.biz-badge.chain {
+  background-color: #4a2f18;
+  color: #a07850;
+  border: 1px solid #6b4226;
+}
+
+.biz-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 0.95;
+  color: #ede0c8;
+  margin-bottom: 0.75rem;
+}
+
+.biz-description {
+  font-size: 1.05rem;
+  color: #c4af90;
+  font-weight: 300;
+  max-width: 52ch;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.biz-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  background-color: #2e1e0f;
+  border: 1px solid #3d2810;
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.biz-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.biz-detail-label {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #6b4226;
+}
+
+.biz-detail-value {
+  font-size: 0.9rem;
+  color: #ede0c8;
+  font-weight: 400;
+}
+
+.biz-detail-value a {
+  color: #c4581a;
+  text-decoration: none;
+}
+.biz-detail-value a:hover { color: #e67e22; }
+
+.biz-body {
+  font-size: 1rem;
+  color: #c4af90;
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: 60ch;
+  margin-bottom: 2rem;
+}
+
+.biz-body a { color: #c4581a; }
+.biz-body em { color: #a07850; font-style: italic; }
+
+.biz-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #3d2810;
+}
+
+.biz-tag {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #a07850;
+  border: 1px solid #4a2f18;
+  border-radius: 3px;
+  padding: 0.2rem 0.55rem;
+  text-decoration: none;
+}
+.biz-tag:hover {
+  color: #ede0c8;
+  border-color: #6b4226;
+}
+
+.biz-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a07850;
+  text-decoration: none;
+  margin-top: 2.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #4a2f18;
+  border-radius: 4px;
+  transition: all 160ms ease-out;
+}
+.biz-back:hover {
+  color: #ede0c8;
+  border-color: #6b4226;
+  background-color: #2e1e0f;
+}
+</style>
+
+<div class="biz-page">
+
+  <!-- BREADCRUMB -->
+  <nav class="biz-breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span>›</span>
+    {{ with .Parent }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span>›</span>
+    {{ end }}
+    {{ .Title }}
+  </nav>
+
+  <!-- LOCAL / CHAIN BADGE -->
+  {{ if .Params.local }}
+    <span class="biz-badge local">&#9670; Locally Owned</span>
+  {{ else }}
+    <span class="biz-badge chain">Chain</span>
+  {{ end }}
+
+  <!-- TITLE -->
+  <h1 class="biz-title">{{ .Title }}</h1>
+
+  <!-- DESCRIPTION -->
+  {{ with .Params.description }}
+    <p class="biz-description">{{ . }}</p>
+  {{ end }}
+
+  <!-- DETAILS BLOCK -->
+  <div class="biz-details">
+    {{ with .Params.address }}
+    <div class="biz-detail-item">
+      <span class="biz-detail-label">Address</span>
+      <span class="biz-detail-value">{{ . }}</span>
+    </div>
+    {{ end }}
+    {{ with .Params.phone }}
+    <div class="biz-detail-item">
+      <span class="biz-detail-label">Phone</span>
+      <span class="biz-detail-value"><a href="tel:{{ . }}">{{ . }}</a></span>
+    </div>
+    {{ end }}
+    {{ with .Params.hours }}
+    <div class="biz-detail-item">
+      <span class="biz-detail-label">Hours</span>
+      <span class="biz-detail-value">{{ . }}</span>
+    </div>
+    {{ end }}
+    {{ with .Params.website }}
+    <div class="biz-detail-item">
+      <span class="biz-detail-label">Website</span>
+      <span class="biz-detail-value"><a href="{{ . }}" target="_blank" rel="noopener">Visit Site ›</a></span>
+    </div>
+    {{ end }}
+  </div>
+
+  <!-- BODY CONTENT -->
+  <div class="biz-body">
+    {{ .Content }}
+  </div>
+
+  <!-- TAGS -->
+  {{ with .Params.tags }}
+  <div class="biz-tags">
+    {{ range . }}
+      <a href="/tags/{{ . | urlize }}/" class="biz-tag">{{ . }}</a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <!-- BACK LINK -->
+  {{ with .Parent }}
+    <a href="{{ .RelPermalink }}" class="biz-back">← Back to {{ .Title }}</a>
+  {{ end }}
+
+</div>
+{{ end }}

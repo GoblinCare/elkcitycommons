@@ -16,7 +16,7 @@ enableRobotsTXT = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = false
   disableThemeToggle = false
-  defaultTheme = "light"
+  defaultTheme = "dark"
 
   [[params.socialIcons]]
     name = "email"
