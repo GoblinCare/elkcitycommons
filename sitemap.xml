@@ -2,28 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://elkcitycommons.com/tags/candy/</loc>
+    <loc>http://localhost:39699/tags/candy/</loc>
   </url><url>
-    <loc>https://elkcitycommons.com/categories/</loc>
+    <loc>http://localhost:39699/categories/</loc>
   </url><url>
-    <loc>https://elkcitycommons.com/events/</loc>
+    <loc>http://localhost:39699/events/</loc>
   </url><url>
-    <loc>https://elkcitycommons.com/eat/</loc>
+    <loc>http://localhost:39699/eat/</loc>
   </url><url>
-    <loc>https://elkcitycommons.com/tags/local/</loc>
+    <loc>http://localhost:39699/tags/local/</loc>
   </url><url>
-    <loc>https://elkcitycommons.com/play/</loc>
+    <loc>http://localhost:39699/play/</loc>
   </url><url>
-    <loc>https://elkcitycommons.com/shop/</loc>
+    <loc>http://localhost:39699/shop/</loc>
   </url><url>
-    <loc>https://elkcitycommons.com/eat/sixty-six-sweet-spot/</loc>
+    <loc>http://localhost:39699/eat/sixty-six-sweet-spot/</loc>
   </url><url>
-    <loc>https://elkcitycommons.com/stay/</loc>
+    <loc>http://localhost:39699/tags/sweets/</loc>
   </url><url>
-    <loc>https://elkcitycommons.com/tags/sweets/</loc>
+    <loc>http://localhost:39699/tags/</loc>
   </url><url>
-    <loc>https://elkcitycommons.com/tags/</loc>
-  </url><url>
-    <loc>https://elkcitycommons.com/</loc>
+    <loc>http://localhost:39699/</loc>
   </url>
 </urlset>
