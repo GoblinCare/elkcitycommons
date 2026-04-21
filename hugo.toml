@@ -32,10 +32,6 @@ enableRobotsTXT = true
     url = "/shop/"
     weight = 20
   [[menu.main]]
-    name = "Stay"
-    url = "/stay/"
-    weight = 30
-  [[menu.main]]
     name = "Play"
     url = "/play/"
     weight = 40

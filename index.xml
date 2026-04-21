@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Welcome to Elk City Commons on Elk City Commons</title>
-    <link>https://elkcitycommons.com/</link>
+    <link>http://localhost:39699/</link>
     <description>Recent content in Welcome to Elk City Commons on Elk City Commons</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://elkcitycommons.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39699/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sixty Six Sweet Spot</title>
-      <link>https://elkcitycommons.com/eat/sixty-six-sweet-spot/</link>
+      <link>http://localhost:39699/eat/sixty-six-sweet-spot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://elkcitycommons.com/eat/sixty-six-sweet-spot/</guid>
+      <guid>http://localhost:39699/eat/sixty-six-sweet-spot/</guid>
       <description>Homemade candies and sweets on Historic Route 66 in Elk City.</description>
     </item>
   </channel>

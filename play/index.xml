@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Play on Elk City Commons</title>
-    <link>https://elkcitycommons.com/play/</link>
+    <link>http://localhost:39699/play/</link>
     <description>Recent content in Play on Elk City Commons</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://elkcitycommons.com/play/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:39699/play/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
